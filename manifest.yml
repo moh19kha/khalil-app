@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: khalil-app
+  host: khalil-app
+  disk_quota: 1024M
+  services:
+  - khalil-app-cloudantNoSQLDB
+  - khalil-app-iotf-service
+  - availability-monitoring-auto
